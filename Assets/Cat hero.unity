@@ -3544,7 +3544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3f5cd0587dcef4989a28be8f2586ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catMeow: {fileID: 0}
+  catMeow: {fileID: 8300000, guid: 34d6e92b0e4da52428dd8de9f705996c, type: 3}
   catFaces:
   - {fileID: 534001192}
   - {fileID: 206958826}
@@ -3556,7 +3556,7 @@ MonoBehaviour:
   pianoSource: {fileID: 1901411098}
   noteHolder: {fileID: 1855702392}
   note: {fileID: 1877912574000024, guid: 6417894754c5d1d4794ec597a31f12a0, type: 2}
-  create: 1
+  create: 0
 --- !u!82 &1901411098
 AudioSource:
   m_ObjectHideFlags: 0
