@@ -51,7 +51,8 @@ public class MusicPlayer : MonoBehaviour
     {
         source.PlayOneShot(trackList[trackNum]);
         playingTrack = true;
-        playButtonText.text = "Pause";
+        playButtonText.text = "Stop";
+        songName.text = trackList[trackNum].name.ToString();
     }
 
     void StopTrack()
@@ -59,6 +60,7 @@ public class MusicPlayer : MonoBehaviour
         source.Stop();
         playingTrack = false;
         playButtonText.text = "Play";
+        songName.text = "";
     }
 
     #endregion

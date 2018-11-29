@@ -233,6 +233,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 446443149}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &34106166
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +280,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 2031864542}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &108033766
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +327,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 739849833}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +440,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 1856166569}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &223788108
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +610,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 1977453847}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &343398026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1230,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 1008262657}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1429,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 343398026}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &614756518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1617,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 15075264}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &720908066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,22 +1647,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566ab3dceae85ed48935cea9ce00c5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mode: 0
   source: {fileID: 720908068}
   trackList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 48019c68c01d817469d67cff8f1d2f0b, type: 3}
   playingTrack: 0
   panelOpen: 0
   PlayerPanel: {fileID: 2043594589}
   openPos: {fileID: 652120969}
   closePos: {fileID: 636267935}
   trackNum: 0
-  songName: {fileID: 0}
+  songName: {fileID: 1772518929}
   playButtonText: {fileID: 530411071}
   arrow: {fileID: 1346768199}
+  heroTracks: []
 --- !u!82 &720908068
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2397,6 +2411,8 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 1639613185}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1639613185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,7 +3135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3f5cd0587dcef4989a28be8f2586ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catMeow: {fileID: 0}
+  catMeow: {fileID: 8300000, guid: 34d6e92b0e4da52428dd8de9f705996c, type: 3}
   catFaces:
   - {fileID: 534001192}
   - {fileID: 206958826}
@@ -3305,7 +3321,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1954005974}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 720908067}
+        m_MethodName: PlayPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1954005974
@@ -3729,3 +3756,5 @@ MonoBehaviour:
   animate: 1
   tophalf: {fileID: 1723898551}
   startPos: {x: 0, y: 0, z: 0}
+  active: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
